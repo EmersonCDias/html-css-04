@@ -1,0 +1,65 @@
+/*
+=================================
+PLANS
+=================================
+*/
+
+.plans__plan {
+    border: 1px solid #ccc;
+    margin: 10% 0;
+}
+
+.plans__plan--most-popular {
+    position: relative;
+}
+
+.plans__plan--most-popular:before {
+    content: "Mais popular";
+    position: absolute;
+    left: -.5em;
+    top: -1em;
+    background: #D50000;
+    color: $font-and-menu-icon-color;
+    padding: .25em;
+    font-weight: bold;
+    border: 2px solid $rgba-opacity-effect;
+    font-size: 85%;
+}
+
+.plans__title {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 5% 0;
+    color: $font-and-menu-icon-color;
+    background: #aaa;
+}
+
+.plans__price {
+    margin: 5% 0;
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.details__detail {
+    margin-bottom: 3%;
+}
+
+.plans__button {
+    margin: 10% 0;
+}
+
+.plans__button a {
+    background: #008080;
+    text-decoration: none;
+    font-weight: bold;
+    color: $font-and-menu-icon-color;
+    padding: 1em;
+    box-shadow: 2px 2px 5px #000;
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.plans__button a:hover {
+    transform: scale(1.1);
+}

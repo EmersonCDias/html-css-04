@@ -1,0 +1,109 @@
+/*
+=======================
+MENU
+=======================
+*/
+.menu {
+    background: $base-color;
+    width: 80%;
+    max-width: 300px;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: -80%;
+    transition: left .5s ease-in-out;
+    border: 2px solid $rgba-opacity-effect; }
+
+    .menu__item--title, .menu__item {
+        color: $font-and-menu-icon-color;
+        font-size: 1.3em; 
+        text-transform: uppercase;
+        padding: 15px 0;
+    }
+
+    .menu li {
+        border-bottom: 1px solid $rgba-opacity-effect;
+    }
+
+    .menu li:hover {
+        background: #378bbf;
+    }
+
+    .menu__item {
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    .menu__item--title {
+        background: $font-and-menu-icon-color;
+        text-align: left;
+        padding-left: 5%
+    }
+
+    .menu-ativo .menu {
+        left: 0;
+    }
+
+    .menu-ativo::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: $rgba-opacity-effect;
+    }
+
+    .menu-mobile-open, .menu-mobile-close {
+        font-size: 150% !important;
+        border: 1px solid $rgba-opacity-effect;
+        border-radius: 5px;
+        background: #095c96;
+        padding: 7px;
+        color: $font-and-menu-icon-color;
+    }
+
+    .menu-mobile-open {
+        float: right;
+        margin: 5% 5% 5% 0;
+    }
+
+    .menu-mobile-close {
+        position: absolute;
+        top: .5em;
+        right: .5em;
+    }
+
+    .menu__search-area {
+        overflow: hidden;
+        width: 90%;
+        margin: 20% auto;
+
+        .menu__search-input {
+            width: 85%;
+            border: none;    
+            border-radius: 5px 0 0 5px;
+            color: #000;
+            -webkit-appearance: none;
+            height: 2.55em;
+            padding: 0 1em;
+            float: left;
+        }
+
+        .menu__search-input:focus {
+            outline: none;
+        }
+
+        .menu__search-button {
+            width: 15%;
+            border: none;
+            background: $font-and-menu-icon-color;
+            border-radius: 0 5px 5px 0;   
+            font-size: 90%;
+            line-height: 1.667em;
+            height: 2.38em;
+            padding: 0 0.5em;
+            float: left;
+            }
+        }

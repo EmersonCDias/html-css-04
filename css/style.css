@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+=================================
+FOOTER
+=================================
+*/
+.footer {
+  background: #5D4037;
+  padding: 5% 0;
+  color: #fff;
+  font-size: .8em; }
+
+/*
+=================================
+GENERAL
+=================================
+*/
+.menu, .presentation, .witness, .plans, .footer {
+  text-align: center; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+strong {
+  font-weight: bold; }
+
+/*
+=================================
+HEADER
+=================================
+*/
+.header {
+  border-bottom: 1px solid #ccc;
+  overflow: auto; }
+  .header .header__logo {
+    width: 30%;
+    margin: 5% 0 5% 5%;
+    float: left; }
+
+/*
+=======================
+MENU
+=======================
+*/
+.menu {
+  background: #095c94;
+  width: 80%;
+  max-width: 300px;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: -80%;
+  transition: left .5s ease-in-out;
+  border: 2px solid rgba(0, 0, 0, 0.3); }
+
+.menu__item--title, .menu__item {
+  color: #fff;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding: 15px 0; }
+
+.menu li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+
+.menu li:hover {
+  background: #378bbf; }
+
+.menu__item {
+  text-decoration: none;
+  display: inline-block; }
+
+.menu__item--title {
+  background: #fff;
+  text-align: left;
+  padding-left: 5%; }
+
+.menu-ativo .menu {
+  left: 0; }
+
+.menu-ativo::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); }
+
+.menu-mobile-open, .menu-mobile-close {
+  font-size: 150% !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background: #095c96;
+  padding: 7px;
+  color: #fff; }
+
+.menu-mobile-open {
+  float: right;
+  margin: 5% 5% 5% 0; }
+
+.menu-mobile-close {
+  position: absolute;
+  top: .5em;
+  right: .5em; }
+
+.menu__search-area {
+  overflow: hidden;
+  width: 90%;
+  margin: 20% auto; }
+  .menu__search-area .menu__search-input {
+    width: 85%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    color: #000;
+    -webkit-appearance: none;
+    height: 2.55em;
+    padding: 0 1em;
+    float: left; }
+  .menu__search-area .menu__search-input:focus {
+    outline: none; }
+  .menu__search-area .menu__search-button {
+    width: 15%;
+    border: none;
+    background: #fff;
+    border-radius: 0 5px 5px 0;
+    font-size: 90%;
+    line-height: 1.667em;
+    height: 2.38em;
+    padding: 0 0.5em;
+    float: left; }
+
+/*
+=================================
+PLANS
+=================================
+*/
+.plans__plan {
+  border: 1px solid #ccc;
+  margin: 10% 0; }
+
+.plans__plan--most-popular {
+  position: relative; }
+
+.plans__plan--most-popular:before {
+  content: "Mais popular";
+  position: absolute;
+  left: -.5em;
+  top: -1em;
+  background: #D50000;
+  color: #fff;
+  padding: .25em;
+  font-weight: bold;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  font-size: 85%; }
+
+.plans__title {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 5% 0;
+  color: #fff;
+  background: #aaa; }
+
+.plans__price {
+  margin: 5% 0;
+  display: inline-block;
+  font-size: 1.8em;
+  font-weight: bold; }
+
+.details__detail {
+  margin-bottom: 3%; }
+
+.plans__button {
+  margin: 10% 0; }
+
+.plans__button a {
+  background: #008080;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  padding: 1em;
+  box-shadow: 2px 2px 5px #000;
+  display: inline-block;
+  transition: transform .5s; }
+
+.plans__button a:hover {
+  transform: scale(1.1); }
+
+/*
+=================================
+PRESENTATION
+=================================
+*/
+.presentation {
+  background: url("../img/background-presentation.jpg");
+  background-size: 300%;
+  background-attachment: fixed;
+  background-position: -450px 0;
+  color: #fff; }
+  .presentation .presentation__title {
+    font-size: 300%;
+    padding: 20% 2% 10% 2%;
+    text-shadow: 3px 3px #000; }
+  .presentation .presentation__paragraph {
+    font-size: 1.5em;
+    padding: 5% 2% 10% 2%;
+    text-shadow: 1.5px 1.5px #000; }
+
+/*
+=================================
+WITNESS
+=================================
+*/
+.witness {
+  background: #ECEFF1; }
+  .witness .witness__paragraph {
+    font-size: 1.9em;
+    font-style: italic;
+    padding: 5% 5%;
+    position: relative; }
+  .witness .witness__photo {
+    border-radius: 50%;
+    margin: 3% 0 5% 0; }
+
+/*# sourceMappingURL=style.css.map */

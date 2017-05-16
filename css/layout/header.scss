@@ -1,0 +1,15 @@
+/*
+=================================
+HEADER
+=================================
+*/
+.header {
+    border-bottom: 1px solid #ccc;
+    overflow: auto;
+
+    .header__logo {
+        width: 30%;
+        margin: 5% 0 5% 5%;
+        float: left;
+    }
+}

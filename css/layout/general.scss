@@ -1,0 +1,30 @@
+/*
+=================================
+GENERAL
+=================================
+*/
+
+//In comum
+.menu, .presentation, .witness, .plans, .footer{
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+strong {
+    font-weight: bold;
+}

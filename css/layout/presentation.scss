@@ -1,0 +1,24 @@
+/*
+=================================
+PRESENTATION
+=================================
+*/
+.presentation {
+    background: url("../img/background-presentation.jpg");
+    background-size: 300%;
+    background-attachment: fixed;
+    background-position: -450px 0;
+    color: $font-and-menu-icon-color;
+
+    .presentation__title {
+        font-size: 300%;
+        padding: 20% 2% 10% 2%;
+        text-shadow: 3px 3px #000;
+    }
+
+    .presentation__paragraph {
+        font-size: 1.5em;
+        padding: 5% 2% 10% 2%;
+        text-shadow: 1.5px 1.5px #000;
+    }
+}
